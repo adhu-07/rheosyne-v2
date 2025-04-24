@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250">
+  <defs>
+    <linearGradient id="tankOutlineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#003087" />
+      <stop offset="100%" stop-color="#00A1D6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tank Base -->
+  <rect x="35" y="230" width="130" height="10" rx="2" ry="2" fill="#003087" />
+  
+  <!-- Tank Body Outline -->
+  <rect x="45" y="30" width="110" height="200" rx="10" ry="10" fill="none" stroke="url(#tankOutlineGradient)" stroke-width="4" />
+  
+  <!-- Tank Top -->
+  <path d="M40 30 L55 10 H145 L160 30" fill="none" stroke="#003087" stroke-width="4" />
+  
+  <!-- Tank Level Markers -->
+  <line x1="165" y1="60" x2="175" y2="60" stroke="#003087" stroke-width="2" />
+  <text x="180" y="65" font-family="Roboto, sans-serif" font-size="12" fill="#003087">100%</text>
+  
+  <line x1="165" y1="105" x2="175" y2="105" stroke="#003087" stroke-width="2" />
+  <text x="180" y="110" font-family="Roboto, sans-serif" font-size="12" fill="#003087">75%</text>
+  
+  <line x1="165" y1="150" x2="175" y2="150" stroke="#003087" stroke-width="2" />
+  <text x="180" y="155" font-family="Roboto, sans-serif" font-size="12" fill="#003087">50%</text>
+  
+  <line x1="165" y1="195" x2="175" y2="195" stroke="#003087" stroke-width="2" />
+  <text x="180" y="200" font-family="Roboto, sans-serif" font-size="12" fill="#003087">25%</text>
+  
+  <!-- Inlet Pipe -->
+  <path d="M155 50 L180 50 L180 40 L190 40" fill="none" stroke="#003087" stroke-width="3" />
+  <circle cx="190" cy="40" r="4" fill="#003087" />
+  
+  <!-- Outlet Pipe -->
+  <path d="M45 200 L25 200 L25 220 L15 220" fill="none" stroke="#003087" stroke-width="3" />
+  <circle cx="15" cy="220" r="4" fill="#003087" />
+  
+  <!-- Water Level Sensor -->
+  <rect x="25" y="60" width="10" height="140" fill="#E0E0E0" stroke="#003087" />
+  <circle cx="30" cy="60" r="3" fill="#00A1D6" />
+  <circle cx="30" cy="85" r="3" fill="#00A1D6" />
+  <circle cx="30" cy="110" r="3" fill="#00A1D6" />
+  <circle cx="30" cy="135" r="3" fill="#00A1D6" />
+  <circle cx="30" cy="160" r="3" fill="#00A1D6" />
+  <circle cx="30" cy="185" r="3" fill="#00A1D6" />
+</svg>

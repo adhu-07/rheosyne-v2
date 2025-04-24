@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - RHEOSYNE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="app-container">
+        <header>
+            <div class="logo-container">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <img src="assets/logo.svg" alt="RHEOSYNE Logo" class="logo">
+                <h1>RHEOSYNE</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-section">
+                <h2>Settings</h2>
+                
+                <div class="card">
+                    <h3>Appearance</h3>
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Notifications</h3>
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <i class="fas fa-bell"></i>
+                            <span>Quality Alerts</span>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" id="quality-alerts-toggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <i class="fas fa-water"></i>
+                            <span>Low Water Level Alerts</span>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" id="level-alerts-toggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <i class="fas fa-filter"></i>
+                            <span>Filter Replacement Reminders</span>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" id="filter-alerts-toggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Account</h3>
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <i class="fas fa-history"></i>
+                            <span>Order History</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payment Methods</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Support</h3>
+                    <a href="mailto:support@rheosyne.com" class="btn secondary-btn contact-btn">
+                        <i class="fas fa-envelope"></i> Contact Support
+                    </a>
+                    <div class="app-info">
+                        <p>RHEOSYNE Smart Water Tank</p>
+                        <p>Version 1.0.0</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 RHEOSYNE Smart Water Solutions</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

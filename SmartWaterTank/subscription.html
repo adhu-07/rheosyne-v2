@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription - RHEOSYNE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="app-container">
+        <header>
+            <div class="logo-container">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <img src="assets/logo.svg" alt="RHEOSYNE Logo" class="logo">
+                <h1>RHEOSYNE</h1>
+            </div>
+            <a href="settings.html" class="icon-btn" aria-label="Settings">
+                <i class="fas fa-cog"></i>
+            </a>
+        </header>
+
+        <main>
+            <section class="page-section">
+                <h2>Filter Subscription</h2>
+                
+                <div class="subscription-status">
+                    <h3>Current Status</h3>
+                    <div class="status-badge" id="subscription-badge">Not Subscribed</div>
+                    <div class="next-replacement" id="next-replacement-date">
+                        <p>Next filter replacement: Not scheduled</p>
+                    </div>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Annual Filter Replacement Plan</h3>
+                        <div class="plan-price">₹2000/year</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium quality filters</li>
+                            <li><i class="fas fa-check"></i> Professional installation</li>
+                            <li><i class="fas fa-check"></i> Quarterly maintenance check</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Water quality guarantee</li>
+                        </ul>
+                    </div>
+                    <button id="subscribe-btn" class="btn primary-btn">
+                        <i class="fas fa-sync-alt"></i> Subscribe Now
+                    </button>
+                </div>
+                
+                <div class="plan-card" id="alternative-plans">
+                    <div class="plan-header">
+                        <h3>Other Plans</h3>
+                    </div>
+                    <div class="plan-option">
+                        <div class="plan-option-header">
+                            <h4>Quarterly Plan</h4>
+                            <div class="plan-price">₹600/quarter</div>
+                        </div>
+                        <button class="btn secondary-btn">Select Plan</button>
+                    </div>
+                    <div class="plan-option">
+                        <div class="plan-option-header">
+                            <h4>Monthly Plan</h4>
+                            <div class="plan-price">₹250/month</div>
+                        </div>
+                        <button class="btn secondary-btn">Select Plan</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 RHEOSYNE Smart Water Solutions</p>
+        </footer>
+    </div>
+
+    <div class="modal" id="subscription-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-check-circle"></i> Subscription Activated!</h2>
+                <button class="close-btn" id="close-sub-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>You have successfully subscribed to the Annual Filter Replacement Plan!</p>
+                <p>Subscription details:</p>
+                <ul>
+                    <li>Plan: Annual Filter Replacement</li>
+                    <li>Price: ₹2000/year</li>
+                    <li>First replacement: <span id="first-replacement"></span></li>
+                    <li>Next billing: <span id="next-billing"></span></li>
+                </ul>
+                <p>You will receive a confirmation shortly.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn primary-btn" id="back-to-home-sub">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

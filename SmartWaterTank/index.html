@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHEOSYNE - Smart Water Tank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="app-container">
+        <header>
+            <div class="logo-container">
+                <img src="assets/logo.svg" alt="RHEOSYNE Logo" class="logo">
+                <h1>RHEOSYNE</h1>
+            </div>
+            <a href="settings.html" class="icon-btn" aria-label="Settings">
+                <i class="fas fa-cog"></i>
+            </a>
+        </header>
+
+        <main>
+            <section class="tank-section">
+                <h2>Tank Status</h2>
+                <div class="tank-container">
+                    <div class="water-tank">
+                        <img src="assets/water-tank.svg" alt="Water Tank" class="tank-image">
+                        <div class="water-level" id="water-level">
+                            <div class="water-wave"></div>
+                        </div>
+                        <div class="tank-level-text" id="tank-level-text">75%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metrics-section">
+                <h2>Water Quality Metrics</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <i class="fas fa-flask"></i>
+                        <h3>pH Level</h3>
+                        <p id="ph-value">7.2</p>
+                        <span class="status good">GOOD</span>
+                    </div>
+                    <div class="metric-card">
+                        <i class="fas fa-tint"></i>
+                        <h3>Turbidity</h3>
+                        <p id="turbidity-value">1 NTU</p>
+                        <span class="status good">GOOD</span>
+                    </div>
+                    <div class="metric-card">
+                        <i class="fas fa-bacteria"></i>
+                        <h3>Bacterial Level</h3>
+                        <p id="bacterial-value">Safe</p>
+                        <span class="status good">GOOD</span>
+                    </div>
+                    <div class="metric-card">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h3>Temperature</h3>
+                        <p id="temp-value">22°C</p>
+                        <span class="status good">GOOD</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="actions-section">
+                <a href="order.html" class="btn primary-btn">
+                    <i class="fas fa-shopping-cart"></i> Order Water
+                </a>
+                <a href="subscription.html" class="btn secondary-btn">
+                    <i class="fas fa-sync-alt"></i> Subscribe to Filter Service
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 RHEOSYNE Smart Water Solutions</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

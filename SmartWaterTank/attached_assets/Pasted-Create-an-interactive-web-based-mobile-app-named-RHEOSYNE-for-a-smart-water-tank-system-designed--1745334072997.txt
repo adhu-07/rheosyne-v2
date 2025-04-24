@@ -1,0 +1,48 @@
+Create an interactive web-based mobile app named "RHEOSYNE" for a smart water tank system, designed for a class presentation, using HTML, CSS, and JavaScript in Replit. Use a blue-and-white color scheme (deep blue #003087, light blue #00A1D6, white #FFFFFF) and include animations for a polished, professional look. The app should simulate real-time water quality monitoring, display an animated water level, allow users to order water or subscribe to a filter replacement service, and include a mock payment system (click-to-pay, no real transactions). Ensure the app is responsive, presentable, and runs seamlessly in Replit’s web environment.
+
+**App Requirements**:
+1. **Home Page**:
+   - Display an animated water tank with a wave-like water level (0-100%) using CSS animations or Canvas.
+   - Show mock water quality metrics (e.g., pH 7.2, turbidity 1 NTU, bacterial level safe) in cards.
+   - Include buttons for “Order Water” and “Subscribe” linking to respective pages.
+   - Add a settings icon linking to a settings page.
+2. **Order Page**:
+   - Provide a dropdown to select water quantity (e.g., 500L, 1000L) with mock prices (e.g., INR 500 for 500L).
+   - Include a “Pay Now” button that triggers an animated confirmation popup (e.g., “Order Placed!”) without real payment.
+3. **Subscription Page**:
+   - Offer a filter replacement subscription (INR 2000/year) with a “Subscribe Now” button.
+   - Show subscription status (e.g., “Active” or “Not Subscribed”) with a color-coded badge.
+   - Trigger an animated confirmation popup on subscription click.
+4. **Settings Page**:
+   - Include toggles for notifications (e.g., quality alerts) and theme (light/dark) with JavaScript functionality.
+   - Add a “Contact Support” button with a placeholder email link.
+
+**Design Preferences**:
+- **Colors**: Deep blue (#003087) for headers/backgrounds, light blue (#00A1D6) for buttons, white (#FFFFFF) for text/cards.
+- **Animations**:
+   - Water level: CSS keyframe wave animation or Canvas-based water effect.
+   - Buttons: Scale or hover effect using CSS transitions.
+   - Popups: Fade-in animation for payment/subscription confirmations using CSS or JavaScript.
+- **Typography**: Use Roboto font (via Google Fonts) with bold headers (24-32px) and body text (16px).
+- **UI/UX**: Card-based layout with rounded corners, shadows, and smooth navigation. Ensure mobile-responsive design with a max-width of 600px.
+- **Assets**: Include a placeholder water tank SVG/PNG and a RHEOSYNE logo (blue water droplet).
+
+**Technical Requirements**:
+- **Tech Stack**: HTML5, CSS3, JavaScript (vanilla or with minimal libraries like Anime.js for animations).
+- **Structure**:
+   - `index.html`: Home page with water level and metrics.
+   - `order.html`: Water ordering with mock payment.
+   - `subscription.html`: Subscription with mock payment.
+   - `settings.html`: Settings with toggles.
+   - `styles.css`: Global styles, animations, and responsive design.
+   - `script.js`: Logic for navigation, mock data, and animations.
+   - `assets/`: Folder for tank icon and logo.
+- **Mock Data**: Use JavaScript objects for water level (e.g., 75%) and quality (e.g., pH 7.2) with simulated updates every 5 seconds.
+- **Payment**: Simulate payment with a popup (no real gateway; just a click-to-confirm action).
+- **Replit Setup**: Include a `.replit` file for web server configuration (e.g., `run = "npx serve ."`).
+
+**Output**:
+- Generate a complete Replit project with HTML, CSS, JavaScript files, and assets.
+- Include comments explaining animations, navigation, and mock payment logic.
+- Provide a `README.md` with instructions to run the app in Replit (e.g., click “Run”).
+- Ensure the app is error-free, interactive, and presentable for a class demo with a professional UI.
